@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,30 +23,25 @@
                                     <constraint firstAttribute="height" constant="64" id="HoU-VP-GOd"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="fgH-l9-B7N"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="33"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="36"/>
                                 <color key="textColor" red="0.19167408579610332" green="0.1972076595905782" blue="0.20334311548223349" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cVu-qi-iJ5">
                                 <rect key="frame" x="0.0" y="138" width="414" height="724"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="VH3-fj-dq1"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="NwV-h2-mz4"/>
-                                </connections>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wUT-aM-t1W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="5jl-70-sno"/>
                             <constraint firstItem="wUT-aM-t1W" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="shf-Fa-oJ5"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="cVu-qi-iJ5" id="p1C-Qx-tJO"/>
-                        <segue destination="bij-Ly-OoK" kind="presentation" identifier="item" id="Q1C-z8-0xR"/>
+                        <outlet property="tableView" destination="cVu-qi-iJ5" id="lds-Di-1tg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -56,11 +53,11 @@
             <objects>
                 <viewController id="bij-Ly-OoK" customClass="ItemViewController" customModule="Cubstart_Shopping_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="awY-7y-Vwk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gj-rX-dip">
-                                <rect key="frame" x="82" y="94" width="250" height="64"/>
+                                <rect key="frame" x="82" y="138" width="250" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="B3z-be-QBB"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="QrS-Ze-8gm"/>
@@ -70,7 +67,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count: 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sps-Hb-jkn">
-                                <rect key="frame" x="82" y="520" width="250" height="43"/>
+                                <rect key="frame" x="82" y="564" width="250" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="5FR-Fi-hmM"/>
                                     <constraint firstAttribute="height" constant="43" id="vFf-AN-LFh"/>
@@ -80,13 +77,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J1m-ZS-5KX">
-                                <rect key="frame" x="37" y="166" width="340" height="340"/>
+                                <rect key="frame" x="37" y="210" width="340" height="340"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="340" id="CB7-A4-iS2"/>
                                     <constraint firstAttribute="width" constant="340" id="lEP-Kn-Qlv"/>
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="bKy-YH-1Y2"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Sps-Hb-jkn" firstAttribute="centerX" secondItem="bKy-YH-1Y2" secondAttribute="centerX" id="0fd-tn-mAy"/>
@@ -96,17 +94,16 @@
                             <constraint firstItem="0Gj-rX-dip" firstAttribute="centerX" secondItem="bKy-YH-1Y2" secondAttribute="centerX" id="tI6-xG-MdR"/>
                             <constraint firstItem="0Gj-rX-dip" firstAttribute="top" secondItem="bKy-YH-1Y2" secondAttribute="top" constant="94" id="tve-dZ-CuU"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="bKy-YH-1Y2"/>
                     </view>
-                    <connections>
-                        <outlet property="itemCount" destination="Sps-Hb-jkn" id="dZk-Hb-5Zb"/>
-                        <outlet property="itemImage" destination="J1m-ZS-5KX" id="2j6-f8-ULE"/>
-                        <outlet property="itemName" destination="0Gj-rX-dip" id="AsY-0h-HXm"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNt-YS-dx2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="836.23188405797111" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -10,20 +10,16 @@ import UIKit
 
 class ItemViewController: UIViewController {
     
+    // IBOutlets have been connected for you :)
     @IBOutlet weak var itemName: UILabel!
     @IBOutlet weak var itemImage: UIImageView!
     @IBOutlet weak var itemCount: UILabel!
 
-    var name = ""
-    var image = ""
-    var count = 0
+    // What variables do you need?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.itemName.text = name
-        self.itemCount.text = "Count: \(count)"
-        self.itemImage.image = UIImage(named: image)
+        // Set your outlets
     }
 
 }

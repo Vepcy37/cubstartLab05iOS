@@ -13,7 +13,6 @@
 		625F2D4025241244005F118C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625F2D3E25241244005F118C /* Main.storyboard */; };
 		625F2D4225241248005F118C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625F2D4125241248005F118C /* Assets.xcassets */; };
 		625F2D4525241248005F118C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625F2D4325241248005F118C /* LaunchScreen.storyboard */; };
-		62AE90102533EF4E00151909 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62AE900F2533EF4E00151909 /* CustomTableViewCell.xib */; };
 		62AE90122533FA1B00151909 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AE90112533FA1B00151909 /* ItemViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		625F2D4125241248005F118C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		625F2D4425241248005F118C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		625F2D4625241248005F118C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62AE900F2533EF4E00151909 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		62AE90112533FA1B00151909 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +66,6 @@
 				625F2D4125241248005F118C /* Assets.xcassets */,
 				625F2D4325241248005F118C /* LaunchScreen.storyboard */,
 				625F2D4625241248005F118C /* Info.plist */,
-				62AE900F2533EF4E00151909 /* CustomTableViewCell.xib */,
 			);
 			path = "Cubstart-Shopping-List";
 			sourceTree = "<group>";
@@ -133,7 +130,6 @@
 			files = (
 				625F2D4525241248005F118C /* LaunchScreen.storyboard in Resources */,
 				625F2D4225241248005F118C /* Assets.xcassets in Resources */,
-				62AE90102533EF4E00151909 /* CustomTableViewCell.xib in Resources */,
 				625F2D4025241244005F118C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
