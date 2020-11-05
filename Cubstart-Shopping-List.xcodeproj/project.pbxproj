@@ -14,6 +14,10 @@
 		625F2D4225241248005F118C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625F2D4125241248005F118C /* Assets.xcassets */; };
 		625F2D4525241248005F118C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625F2D4325241248005F118C /* LaunchScreen.storyboard */; };
 		62AE90122533FA1B00151909 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AE90112533FA1B00151909 /* ItemViewController.swift */; };
+		8B7278482552FB2E00AE9ABB /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B7278472552FB2E00AE9ABB /* CustomTableViewCell.xib */; };
+		8B72784C255300A500AE9ABB /* apple.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8B727849255300A500AE9ABB /* apple.jpeg */; };
+		8B72784D255300A500AE9ABB /* banana.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8B72784A255300A500AE9ABB /* banana.jpeg */; };
+		8B72784E255300A500AE9ABB /* orange.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8B72784B255300A500AE9ABB /* orange.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		625F2D4425241248005F118C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		625F2D4625241248005F118C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62AE90112533FA1B00151909 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		8B7278472552FB2E00AE9ABB /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		8B727849255300A500AE9ABB /* apple.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = apple.jpeg; path = ../../../../../../Downloads/apple.jpeg; sourceTree = "<group>"; };
+		8B72784A255300A500AE9ABB /* banana.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = banana.jpeg; path = ../../../../../../Downloads/banana.jpeg; sourceTree = "<group>"; };
+		8B72784B255300A500AE9ABB /* orange.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = orange.jpeg; path = ../../../../../../Downloads/orange.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +70,14 @@
 				625F2D3A25241244005F118C /* SceneDelegate.swift */,
 				625F2D3C25241244005F118C /* ViewController.swift */,
 				62AE90112533FA1B00151909 /* ItemViewController.swift */,
+				8B7278472552FB2E00AE9ABB /* CustomTableViewCell.xib */,
 				625F2D3E25241244005F118C /* Main.storyboard */,
 				625F2D4125241248005F118C /* Assets.xcassets */,
 				625F2D4325241248005F118C /* LaunchScreen.storyboard */,
 				625F2D4625241248005F118C /* Info.plist */,
+				8B727849255300A500AE9ABB /* apple.jpeg */,
+				8B72784A255300A500AE9ABB /* banana.jpeg */,
+				8B72784B255300A500AE9ABB /* orange.jpeg */,
 			);
 			path = "Cubstart-Shopping-List";
 			sourceTree = "<group>";
@@ -130,6 +142,10 @@
 			files = (
 				625F2D4525241248005F118C /* LaunchScreen.storyboard in Resources */,
 				625F2D4225241248005F118C /* Assets.xcassets in Resources */,
+				8B72784D255300A500AE9ABB /* banana.jpeg in Resources */,
+				8B7278482552FB2E00AE9ABB /* CustomTableViewCell.xib in Resources */,
+				8B72784E255300A500AE9ABB /* orange.jpeg in Resources */,
+				8B72784C255300A500AE9ABB /* apple.jpeg in Resources */,
 				625F2D4025241244005F118C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NQZN2U2PUK;
 				INFOPLIST_FILE = "Cubstart-Shopping-List/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NQZN2U2PUK;
 				INFOPLIST_FILE = "Cubstart-Shopping-List/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
